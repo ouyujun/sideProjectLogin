@@ -26,37 +26,40 @@ p {
 
 .indexPage {
     display         : flex;
+    flex-direction  : column;
     height          : 100%;
     padding         : 0px;
     background-color: #a8b7ccb2;
-    // 修改以下值試試看 row | row-reverse | column | column-reverse;
-    flex-direction  : column;
-}
-
-.toolbar {
-    // position        : absolute;
-    // top             : 0;
-    // left            : 0;
-    // right           : 0;
-    padding-right: 10px;
-    height          : 5%;
-    display         : flex;
-    width: auto;
-    align-items     : center;
-    background-color: #15518d;
-    color           : white;
-    font-weight     : 600;
-    & img {
-        margin: 0 16px;
+    .toolbar {
+        // position        : absolute;
+        // top             : 0;
+        // left            : 0;
+        // right           : 0;
+        padding-right   : 10px;
+        height          : 5%;
+        display         : flex;
+        width           : auto;
+        align-items     : center;
+        background-color: #15518d;
+        color           : white;
+        font-weight     : 600;
+    
+        & img {
+            margin: 0 16px;
+        }
     }
 }
 
 
+.flex{
+    display         : flex;
+    flex-direction  : row;
+    height: 95%;
+}
 .item {
     // position : absolute;
     // top      : 5%;
-    flex     : 0 0 30%;
-    height: 100%;
+    flex     : 0 0 20%;
     display  : flex;
     font-size: 18px;
 }
@@ -64,42 +67,45 @@ p {
 .content {
     // position: absolute;
     // left    : 20%;
-    width   : 70%;
-    padding: 4%;
+    width      : 50%;
+    padding    : 4%;
 }
 
 .navBar {
     // position        : absolute;
     // left            : 0px;
     width           : 20%;
-    flex-grow       : 1;
-    flex-shrink     : 1;
-    flex-basis      : 60%;
     height          : 100%;
     background-color: aliceblue;
-    ul{
+
+    ul {
         width  : 100%;
         padding: 10px auto;
+
         & li {
             height          : 40px;
             width           : 100%;
             line-height     : 40px;
             text-align      : center;
             background-color: #f5f6f8;
+
             &:hover {
                 background-color: #759ceb;
                 cursor          : pointer;
             }
+
             a {
-                text-decoration:none;
-                width: 100%;
+                text-decoration: none;
+                width          : 100%;
             }
         }
     }
 }
-.spacer{
+
+.spacer {
     text-align: end;
 }
+
 /* Responsive Styles */
 @media screen and (max-width: 767px) {}
 
