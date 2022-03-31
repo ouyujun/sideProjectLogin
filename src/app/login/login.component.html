@@ -1,23 +1,21 @@
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <label  class="form-label">ID:</label>
-        </div>
-        <div class="col">
-            <input type="text" placeholder="帳號" [(ngModel)]="input">
-        </div>
-        <div class="col">
-            <label  class="form-label">PassWord:</label>
-        </div>
-        <div class="col">
-            <input type="password" placeholder="密碼" [(ngModel)]="password"> 
-        </div>
-        <div class="col">
-            <button type="button" class="btn" (click)="onLogin()">log in</button>
-        </div>
+    <h1>會員登入</h1><br>
+
+    <div class="col">
+        <label class="form-label">ID:</label>
     </div>
-</div>
-<div class="mb-3">
-
-
+    <div class="col">
+        <input type="text" placeholder="帳號" [(ngModel)]="input"><br>
+        <p>{{idHint}}</p>
+    </div>
+    <div class="col">
+        <label class="form-label">PassWord:</label>
+    </div>
+    <div class="col">
+        <input type="password" placeholder="密碼" [(ngModel)]="password">
+        <p>{{pwHint}}</p>
+    </div>
+    <div class="col">
+        <button type="button" class="btn" (click)="onLogin()">log in</button>
+    </div>
 </div>

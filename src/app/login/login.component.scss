@@ -1,4 +1,8 @@
 
+h1{
+    font-size: 32px;
+    color: #15518d;
+}
 .col{
     height: 48px;
     width: 380px;
@@ -21,4 +25,12 @@
         height: 100%;
         width: 100%;
     }
+    p{
+        color:red;
+    }
+}
+.container{
+    position: absolute;
+    top: 10px;
+    left: 30px;
 }
