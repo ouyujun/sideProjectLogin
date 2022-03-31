@@ -1,0 +1,23 @@
+.col{
+    height: 48px;
+    width: 380px;
+    label{
+        font-size: 18px;
+        width: 100%;
+        line-height: 48px;
+    }
+    input{
+        height: 28px;
+        width: 100%;
+        border: 1px solid  rgb(37, 132, 170);
+        border-radius: 4px;
+    }
+    .btn{
+        border: 1px solid #15518d;
+        background-color: #15518d;
+        border-radius: 4px;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+    }
+}
