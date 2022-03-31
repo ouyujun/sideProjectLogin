@@ -12,5 +12,8 @@ export class IndexComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onLogout(){
+    localStorage.clear();
+    this.router.navigate(['./login'])
+  }
 }
